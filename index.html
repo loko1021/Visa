@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美签下证概率测评</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-check {
+            margin-bottom: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        #phoneInput {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>美签下证概率测评</h1>
+        <div id="quiz" class="mt-4">
+            <!-- 题目动态加载 -->
+        </div>
+        <button id="submit" class="btn btn-primary mt-3">提交</button>
+        <div id="result" class="mt-4"></div>
+        <div id="phoneInput" class="mt-4" style="display: none;">
+            <label for="phone">请输入您的手机号：</label>
+            <input type="text" id="phone" class="form-control" placeholder="请输入手机号">
+            <button id="savePhone" class="btn btn-success mt-2">保存手机号</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
